@@ -8,8 +8,6 @@
 
 package com.bbc.uiapibbc;
 
-import org.openqa.selenium.WebDriver;
-
 /**
  * SignInPage //ADDD (description of class)
  * <p>
@@ -24,8 +22,6 @@ import org.openqa.selenium.WebDriver;
  */
 public class SignInPage extends BasePage {
 	
-	public SignInPage(WebDriver driver) {
-		super(driver);
-	}
+
 
 }

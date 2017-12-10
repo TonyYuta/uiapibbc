@@ -8,8 +8,6 @@
 
 package com.bbc.uiapibbc;
 
-import org.openqa.selenium.WebDriver;
-
 /**
  * WeatherPage //ADDD (description of class)
  * <p>
@@ -24,12 +22,5 @@ import org.openqa.selenium.WebDriver;
  */
 public class WeatherPage extends BasePage {
 
-	/**
-	 * @param driver
-	 */
-	public WeatherPage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
 
 }

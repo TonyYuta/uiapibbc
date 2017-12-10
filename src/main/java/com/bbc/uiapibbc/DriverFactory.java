@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class DriverFactory {
 
 	// private constructor does not allow to create class into object 
-	DriverFactory() {}//constructor
+	//DriverFactory() {}//constructor
 	
 	// defining timeouts 
 	static final int IMPLICIT_WAIT = 7;
@@ -137,5 +137,6 @@ public class DriverFactory {
 				
 			});
 		}// addShutDownHook method
+	
 		
 } //class

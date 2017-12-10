@@ -5,11 +5,7 @@
  *   Created: Nov 30, 2017
  *   
  */
-package com.bbc;
-
-
-
-import org.openqa.selenium.WebDriver;
+package com.bbc.uiapibbc;
 
 /**
  * HomePage //ADDD (description of class)
@@ -23,10 +19,8 @@ import org.openqa.selenium.WebDriver;
  * @since       1.0
  *
  */
-public class HomePage extends Common {
+public class HomePage extends BasePage {
 	
-	public HomePage(WebDriver driver) {
-		super(driver);
-	}
+
 
 }

@@ -8,8 +8,6 @@
 
 package com.bbc.uiapibbc;
 
-import org.openqa.selenium.WebDriver;
-
 /**
  * SportPage //ADDD (description of class)
  * <p>
@@ -24,12 +22,5 @@ import org.openqa.selenium.WebDriver;
  */
 public class SportPage extends BasePage {
 
-	/**
-	 * @param driver
-	 */
-	public SportPage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
 
 }

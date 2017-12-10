@@ -8,6 +8,7 @@
 
 package com.bbc.uiapibbc;
 
+//import com.bbc.uiapibbc.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,12 +44,15 @@ public class BasePage {
 	
 	// className
 	
+	BasePage() {
+		driver = DriverFactory.getDriver(TestData.BROWSER);	
+	}
+	
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
 	public String navigateToHomePage() {
-		DriverFactory.getDriver(TestData.BROWSER);	
 		String result = "Welcome to BBC.com";		
 		we = driver.findElement(By.cssSelector(homePageTab));
 		we.click();

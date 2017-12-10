@@ -21,5 +21,12 @@ package com.bbc.uiapibbc;
  *
  */
 public class BasePageTest {
+	BasePage basePage = new BasePage();
+	HomePage homePage = new HomePage();
+	NewsPage newsPage = new NewsPage();
+	SignInPage signInPage = new SignInPage();
+	SportPage sportPage = new SportPage();
+	WeatherPage weatherPage = new WeatherPage();
+	
 
 }
