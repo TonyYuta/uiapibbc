@@ -53,10 +53,15 @@ public class BasePage {
 	}
 	
 	public String navigateToHomePage() {
-		String result = "Welcome to BBC.com";		
+System.out.println("-----debug1-------------");
+		String result = "Welcome to BBC.com";	
+System.out.println("-----debug2-------------");
 		we = driver.findElement(By.cssSelector(homePageTab));
+System.out.println("-----debug3-------------");
 		we.click();
+System.out.println("-----debug4-------------");
 		we = driver.findElement(By.cssSelector(welcomeToBbComLabel));
+System.out.println("-----debug5-------------");
 		return result = we.getText();
 	}
 //	
