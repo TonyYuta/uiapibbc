@@ -87,8 +87,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="com.bbc.uiapibbc.BasePageTest" project="uiapibbc" 
-    file="/uiapibbc/src/test/java/com/bbc/uiapibbc/BasePageTest.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="11" language="java" name="com.bbc.uiapibbc.BaseTestoject="uiapibbc" 
+    file="/uiapibbc/src/test/java/com/bbc/uiapibbc/BaseTest.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="618" y="378"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -161,26 +161,22 @@ driver=DriverFactory.getDriver(TestData BROWSER)
     ]]>
     </text>  
   </note>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="11"/>  
-  </generalization>  
-  <association id="22">    
+  <association id="20">    
     <end type="SOURCE" refId="11" navigable="false" variant="ASSOCIATION">      
-      <attribute id="23" name="basePage">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="24" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="21" name="basePage"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true" variant="ASSOCIATION"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
   <association id="25">    
     <end type="SOURCE" refId="11" navigable="false" variant="ASSOCIATION">      
       <attribute id="26" name="homePage">        

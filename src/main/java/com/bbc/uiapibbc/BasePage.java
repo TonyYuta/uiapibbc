@@ -33,9 +33,7 @@ public class BasePage {
 	
 	static WebDriver driver;
 	static WebElement we;
-	
-	//driver = DriverFactory.getDriver(TestData.BROWSER);
-	
+		
 	public static String homePageUrl = "http://www.bbc.com/";
 	
 	//cssSelector
@@ -73,7 +71,7 @@ System.out.println("--------debug8---BasePage()----------");
 		
 	public String navigateToHomePage() {
 		String result = "";			
-		driver = DriverFactory.getDriver(TestData.BROWSER);	
+		//driver = DriverFactory.getDriver(TestData.BROWSER);	
 		driver.navigate().to(homePageUrl);		
 		we = driver.findElement(By.cssSelector(homePageTab));
 		we.click();

@@ -20,6 +20,6 @@ package com.bbc.uiapibbc;
  * @since       1.0
  *
  */
-public class NewsPageTest extends BasePageTest {
+public class NewsPageTest extends BaseTest {
 
 }

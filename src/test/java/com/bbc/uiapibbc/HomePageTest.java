@@ -7,8 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HomePageTest extends BasePageTest {
-	
+public class HomePageTest extends BaseTest {
 	
 	@BeforeClass(enabled = true, alwaysRun = true)
 	public void beforeClassSetUp() {
@@ -21,7 +20,7 @@ public class HomePageTest extends BasePageTest {
 	
 	@BeforeMethod(alwaysRun = true)
 	public void beforeTestSetUp() {
-		
+		driver = DriverFactory.getDriver(TestData.BROWSER);
 	}
 	
 	@AfterMethod(enabled = true, alwaysRun = true)

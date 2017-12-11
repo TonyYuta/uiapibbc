@@ -1,5 +1,5 @@
 /**
- *   File Name: BasePageTest.java<br>
+ *   File Name: BaseTest.java<br>
  *
  *   Yutaka<br>
  *   Created: Dec 8, 2017
@@ -8,8 +8,10 @@
 
 package com.bbc.uiapibbc;
 
+import org.openqa.selenium.WebDriver;
+
 /**
- * BasePageTest //ADDD (description of class)
+ * BaseTest //ADDD (description of class)
  * <p>
  * //ADDD (description of core fields)
  * <p>
@@ -20,7 +22,10 @@ package com.bbc.uiapibbc;
  * @since       1.0
  *
  */
-public class BasePageTest {
+public class BaseTest {
+	
+	static WebDriver driver;
+	
 	BasePage basePage = new BasePage();
 	HomePage homePage = new HomePage();
 	NewsPage newsPage = new NewsPage();
