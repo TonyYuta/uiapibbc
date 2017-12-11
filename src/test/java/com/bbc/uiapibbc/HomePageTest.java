@@ -1,9 +1,5 @@
 package com.bbc.uiapibbc;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -30,7 +26,7 @@ public class HomePageTest extends BasePageTest {
 	
 	@AfterMethod(enabled = true, alwaysRun = true)
 	public void afterTest() {
-		
+		DriverFactory.closeBrowser();	
 	}
 
 	@Test(enabled = false, groups = {"driver", "regression", "all"}, priority = 0)
@@ -40,10 +36,10 @@ public class HomePageTest extends BasePageTest {
  
 	@Test(enabled = true, groups = {"products", "regression", "all"}, priority = 0)
 	public void testNavigateHomePage() {
-		String expected = "www.bbc.com/";
-		String actual = "www.bbc.com/";
+		String expected = "Welcome to BBC.com";
+		String actual = "";
 		actual = basePage.navigateToHomePage();
-		AssertJUnit.assertEquals(actual, expected, "URI doesn't match to Home page");
+		Assert.assertEquals(actual, expected, "URI doesn't match to Home page");
 	}
 	
 	
