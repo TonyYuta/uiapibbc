@@ -31,16 +31,8 @@
 		    <artifactId>selenium-java</artifactId>
 		    <version>3.7.1</version>
 		</dependency>
-
-  <!--       
-        https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
-		<dependency>
-		    <groupId>org.seleniumhq.selenium</groupId>
-		    <artifactId>selenium-chrome-driver</artifactId>
-		    <version>3.4.0</version>
-		</dependency>
         
-  -->   <dependency>
+     	<dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.20</version>
@@ -53,13 +45,7 @@
 		    <version>3.20.0</version>
 		    <scope>test</scope>
 		</dependency>
-<!-- 
-        https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-server</artifactId>
-            <version>3.4.0</version>
-        </dependency> -->
+
     </dependencies>
     
     <build>
@@ -75,13 +61,10 @@
                     <properties>
                         <property>
                             <name>testnames</name>
-                            <value>Test</value>
+                            <value>basicTest</value>
                         </property>
                         
-                        <systemPropertyVariables>
-                  			<browser>${browser}</browser>
-                  			<groups>${groups}</groups>
-                		</systemPropertyVariables>
+                       
                     </properties>
                 </configuration>
             </plugin>
@@ -98,50 +81,18 @@
                 </configuration>
             </plugin>
             
-            <!-- code coverage configuration -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.8</version>
-                <executions>
-                    <execution>
-                        <id>pre-unit-test</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                        <configuration>
-                            <destFile>${project.build.directory}/jacoco.exec</destFile>                        
-                            <propertyName>surefireArgLine</propertyName> 
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>post-unit-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${project.build.directory}/jacoco.exec</dataFile>
-                            <outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+          
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20</version>
                 <executions>
                     <execution>
-                        <id>default-test</id>
+                        <id>basicTest</id>
                         <phase>test</phase>
                         <goals>
                             <goal>test</goal>
                         </goals>
-                        <configuration>
-                            <testFailureIgnore>true</testFailureIgnore>                          
-                <!-- comment next line for fun TCs from IDE; uncomment it for Code Coverage in Jenkins -->
-							<argLine>${surefireArgLine}</argLine> 	
-                        </configuration>
+                        
                     </execution>
                 </executions>
                 <configuration>
@@ -150,13 +101,7 @@
                     </includes>
                 </configuration>
             </plugin>
-            <plugin>
-
-                <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.2</version>
-            </plugin>
+           
         </plugins>
     </build>
     <reporting>
@@ -198,29 +143,8 @@
                     <minimumTokens>100</minimumTokens>
                 </configuration>
             </plugin>
-            
-            <plugin>
-
-                <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/findbugs-maven-plugin -->
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.4</version>
-            </plugin>
-            
-            <plugin>
-
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.17</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
+                   
+     
         </plugins>
     </reporting>
 </project>
