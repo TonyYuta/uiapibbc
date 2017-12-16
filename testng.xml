@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Page Object test example">
+<parameter name="appURL" value="https://www.bbc.com/"/>
+<parameter name="browserType" value="firefox"/>
+  <test name="sample test">
     <classes>
       <class name="com.bbc.uiapibbc.HomePageTest"/>
+      <class name="com.bbc.uiapibbc.BasePageTest"/>
+      <class name="com.pack.common.tests.CreateAnAccounTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>

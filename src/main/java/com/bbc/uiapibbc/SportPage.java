@@ -8,6 +8,8 @@
 
 package com.bbc.uiapibbc;
 
+import org.openqa.selenium.WebDriver;
+
 /**
  * SportPage //ADDD (description of class)
  * <p>
@@ -20,7 +22,12 @@ package com.bbc.uiapibbc;
  * @since       1.0
  *
  */
-public class SportPage extends BasePage {
+public class SportPage {
 
+	private WebDriver driver;
+	
+	public SportPage(WebDriver driver) {
+		this.driver = driver;
+	}
 
 }

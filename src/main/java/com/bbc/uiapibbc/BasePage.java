@@ -30,9 +30,11 @@ import org.openqa.selenium.WebElement;
  */
 public class BasePage {
 
-	
-	static WebDriver driver;
+	//static WebDriver driver = TestBaseSetup.getDriver(TestData.BROWSER);	
 	static WebElement we;
+	
+	//WebDriver driver = TestBaseSetup.getDriver();
+	WebDriver driver;
 		
 	public static String homePageUrl = "http://www.bbc.com/";
 	
@@ -47,35 +49,24 @@ public class BasePage {
 	
 	// className
 	
-/*	
-	BasePage() {
-		driver = DriverFactory.getDriver(TestData.BROWSER);	
-System.out.println("--------debug6---BasePage()----------");
-	}
-*/
-	
-	
-	/*
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	*/
 	
-	/*
-	@BeforeClass(alwaysRun = true)
-	void driverInit() {
-		driver = DriverFactory.getDriver(TestData.BROWSER);	
-System.out.println("--------debug8---BasePage()----------");
-	}
-	*/
-		
 	public String navigateToHomePage() {
 		String result = "";			
-		//driver = DriverFactory.getDriver(TestData.BROWSER);	
-		driver.navigate().to(homePageUrl);		
-		we = driver.findElement(By.cssSelector(homePageTab));
-		we.click();
+		//driver = TestBaseSetup.getDriver(TestData.BROWSER);	
+//System.out.println("--------debug8---navigateToHomePage(): ");	
+//System.out.println("--------debug9-----driver: " + driver.toString());	
+		System.out.println("before driver access");
+		driver.navigate().to(homePageUrl);	
+//System.out.println("--------debug10---navigateToHomePage()----------");	
+
+//		we = driver.findElement(By.cssSelector(homePageTab));
+//		we.click();
+		System.out.println("before find element");
 		we = driver.findElement(By.cssSelector(welcomeToBbComLabel));
+		System.out.println("before get text");
 		return result = we.getText();
 		//return result = we.toString();
 	}

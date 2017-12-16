@@ -20,6 +20,6 @@ package com.bbc.uiapibbc;
  * @since       1.0
  *
  */
-public class WeatherPageTest extends BaseTest {
+public class WeatherPageTest extends TestBaseSetup {
 
 }
