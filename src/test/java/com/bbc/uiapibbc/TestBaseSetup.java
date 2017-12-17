@@ -1,8 +1,11 @@
 package com.bbc.uiapibbc;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -16,6 +19,7 @@ import org.testng.annotations.Parameters;
 public class TestBaseSetup {
 
 	private WebDriver driver;
+	DesiredCapabilities capabilities;
 	static String driverPath = "/uiapibbc/resources/webdrivers/mac/";
 
 	public WebDriver getDriver() {
@@ -24,11 +28,28 @@ public class TestBaseSetup {
 
 	private void setDriver(String browserType, String appURL) {
 		switch (browserType) {
-		case "chrome":
-			driver = initChromeDriver(appURL);
+		case "chrome":			
+			 System.setProperty("webdriver.chrome.driver", "/Library/chromedriver");
+				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/resources/webdrivers/mac/chromedriver");
+				capabilities = DesiredCapabilities.chrome();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("test-type");
+				options.addArguments("disable-extensions");
+				options.addArguments("disable-infobars");
+				options.addArguments("start-maximized");
+				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+				driver = new ChromeDriver(capabilities);
+				driver.manage().window().maximize();
+				driver.get(appURL);
 			break;
 		case "firefox":
-			driver = initFirefoxDriver(appURL);
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/resources/webdrivers/mac/geckodriver");
+		    capabilities = DesiredCapabilities.firefox();
+		    capabilities.setCapability("marionette", true);
+		    driver = new FirefoxDriver(capabilities);
+//		    driver.manage().window().maximize();
+			driver.manage().window().setSize(new Dimension(1920, 1080));
+			driver.get(appURL);
 			break;
 		default:
 			System.out.println("browser : " + browserType

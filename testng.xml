@@ -2,11 +2,9 @@
 <suite name="Page Object test example">
 <parameter name="appURL" value="https://www.bbc.com/"/>
 <parameter name="browserType" value="firefox"/>
-  <test name="sample test">
+  <test name="basicTest">
     <classes>
       <class name="com.bbc.uiapibbc.HomePageTest"/>
-      <class name="com.bbc.uiapibbc.BasePageTest"/>
-      <class name="com.pack.common.tests.CreateAnAccounTest"/>
     </classes>
   </test>
 </suite>
