@@ -26,18 +26,14 @@ import java.util.Date;
 public class Helper {
 	
 	static String currentWeekDay() {
-		 
-        Date now = new Date();
- 
+        Date now = new Date(); 
         SimpleDateFormat simpleDateformat = new SimpleDateFormat("EEEE"); // the day of the week spelled out completely
-        //System.out.println(simpleDateformat.format(now));
         return simpleDateformat.format(now);
         }
 	
 	static String currentWeekdayDayOfMonthMonth() {
 		Date now = new Date();
         SimpleDateFormat simpleDateformat = new SimpleDateFormat("EEEE, dd MMMM"); // Weekday, dayOfMonth Month
-        //System.out.println(simpleDateformat.format(now));
         return simpleDateformat.format(now);
 	}
 	

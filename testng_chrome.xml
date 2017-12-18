@@ -4,7 +4,6 @@
 <parameter name="browserType" value="chrome"/>
   <test name="basicTest">
     <classes>
-      <class name="com.bbc.uiapibbc.BaseTest"/>
       <class name="com.bbc.uiapibbc.HomePageTest"/>
       <class name="com.bbc.uiapibbc.NewsPageTest"/>
     </classes>

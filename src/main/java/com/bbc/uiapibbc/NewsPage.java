@@ -8,7 +8,9 @@
 
 package com.bbc.uiapibbc;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * NewsPage //ADDD (description of class)
@@ -22,14 +24,23 @@ import org.openqa.selenium.WebDriver;
  * @since       1.0
  *
  */
-public class NewsPage {
-	
-	private WebDriver driver;
+public class NewsPage extends BasePage {
+		
+	private By videoRedTab = By.cssSelector("div:nth-child(2) > div > div:nth-child(1) > nav > ul > li:nth-child(2)> a > span:nth-child(1)");
 	
 	public NewsPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 	}
 	
+	public NewsVideoPage navigateToNewsVideoPage(WebDriver driver) {
+		Helper.waiting2000();
+		WebElement videoRedTabElement = driver.findElement(videoRedTab);
+		videoRedTabElement.click();
+		Helper.waiting2000();
+		return new NewsVideoPage(driver);
+	}
+	
+
 
 
 }

@@ -20,6 +20,6 @@ package com.bbc.uiapibbc;
  * @since       1.0
  *
  */
-public class SportPageTest extends TestBaseSetup {
+public class SportPageTest extends BaseTest {
 
 }

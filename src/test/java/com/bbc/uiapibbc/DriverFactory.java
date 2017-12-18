@@ -6,9 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 
 /** @author Yutaka */
 
@@ -16,17 +13,17 @@ import org.testng.annotations.Parameters;
  * it will contain specefications for the particular drivers 
  */
 
-public class TestBaseSetup {
+public class DriverFactory {
 
-	private WebDriver driver;
-	DesiredCapabilities capabilities;
-	static String driverPath = "/uiapibbc/resources/webdrivers/mac/";
+	public static WebDriver driver;
+	public static DesiredCapabilities capabilities;
+	public static String driverPath = "/uiapibbc/resources/webdrivers/mac/";
 
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 
-	private void setDriver(String browserType, String appURL) {
+	protected static void setDriver(String browserType, String appURL) {
 		switch (browserType) {
 		case "chrome":			
 			 System.setProperty("webdriver.chrome.driver", "/Library/chromedriver");
@@ -76,20 +73,5 @@ public class TestBaseSetup {
 		return driver;
 	}
 
-	@Parameters({ "browserType", "appURL" })
-	@BeforeClass
-	public void initializeTestBaseSetup(String browserType, String appURL) {
-		try {
-			setDriver(browserType, appURL);
-
-		} catch (Exception e) {
-			System.out.println("Error....." + e.getStackTrace());
-		}
-	}
-	
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
 }
 	

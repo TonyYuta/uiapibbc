@@ -22,12 +22,12 @@ import org.openqa.selenium.WebDriver;
  * @since       1.0
  *
  */
-public class SignInPage {
+public class SignInPage extends BasePage {
 	
 	private WebDriver driver;
 	
 	public SignInPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 	}
 	
 

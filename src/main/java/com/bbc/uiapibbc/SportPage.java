@@ -22,12 +22,12 @@ import org.openqa.selenium.WebDriver;
  * @since       1.0
  *
  */
-public class SportPage {
+public class SportPage extends BasePage {
 
 	private WebDriver driver;
 	
 	public SportPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 	}
 
 }

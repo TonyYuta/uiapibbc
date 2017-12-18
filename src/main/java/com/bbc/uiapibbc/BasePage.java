@@ -8,13 +8,7 @@
 
 package com.bbc.uiapibbc;
 
-//import com.bbc.uiapibbc.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-
-
 
 /**
  * BasePage //ADDD (description of class)
@@ -29,23 +23,10 @@ import org.openqa.selenium.WebElement;
  *
  */
 public class BasePage {
-
-	//static WebDriver driver = TestBaseSetup.getDriver(TestData.BROWSER);	
-	static WebElement we;
 	
-	//WebDriver driver = TestBaseSetup.getDriver();
-	WebDriver driver;
-		
-	public static String homePageUrl = "http://www.bbc.com/";
-	
-	//cssSelector
-	public String homePageTab = "#orb-nav-links > ul > li.orb-nav-homedotcom.orb-w > a";
-	//public String welcomeToBbComLabel = ".module.module--date.module--highlight > .module__title";
-	public String welcomeToBbComLabel = "#page > section.module.module--date.module--highlight > h2 > span";
-	
+	public WebDriver driver;	
 	
 	// id
-
 	
 	// className
 	
@@ -53,23 +34,12 @@ public class BasePage {
 		this.driver = driver;
 	}
 	
-	public String navigateToHomePage() {
-		String result = "";			
-		//driver = TestBaseSetup.getDriver(TestData.BROWSER);	
-//System.out.println("--------debug8---navigateToHomePage(): ");	
-//System.out.println("--------debug9-----driver: " + driver.toString());	
-		System.out.println("before driver access");
-		driver.navigate().to(homePageUrl);	
-//System.out.println("--------debug10---navigateToHomePage()----------");	
-
-//		we = driver.findElement(By.cssSelector(homePageTab));
-//		we.click();
-		System.out.println("before find element");
-		we = driver.findElement(By.cssSelector(welcomeToBbComLabel));
-		System.out.println("before get text");
-		return result = we.getText();
-		//return result = we.toString();
+	public String currentPageTitle(WebDriver driver) {
+		return driver.getTitle();
 	}
+	
+
+	
 //	
 //	public String logOut() {
 //		String result = "Log Out";
