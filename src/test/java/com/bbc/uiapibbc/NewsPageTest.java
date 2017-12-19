@@ -27,7 +27,7 @@ public class NewsPageTest extends BaseTest {
 		
 	@Test(enabled = true, groups = {"news", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsVideoPage() {
-		String expected = "Video Top Stories_";
+		String expected = "Video Top Stories";
 		newsPage = homePage.navigateToNewsPage(driver);
 		newsVideoPage = newsPage.navigateToNewsVideoPage(driver); 
 		Helper.waiting2000();

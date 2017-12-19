@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
-  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <package id="1" language="java" name="com.bbc.uiapibbc" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="88" y="46"/>    
@@ -8,7 +8,7 @@
   </package>  
   <class id="2" language="java" name="com.bbc.uiapibbc.SportPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/SportPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1149" y="551"/>    
+    <position height="-1" width="-1" x="1187" y="324"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -17,7 +17,7 @@
   </class>  
   <class id="3" language="java" name="com.bbc.uiapibbc.HomePage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/HomePage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="161" y="610"/>    
+    <position height="-1" width="-1" x="165" y="344"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -26,7 +26,7 @@
   </class>  
   <class id="4" language="java" name="com.bbc.uiapibbc.WeatherPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/WeatherPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1331" y="552"/>    
+    <position height="-1" width="-1" x="1360" y="323"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
   </class>  
   <class id="5" language="java" name="com.bbc.uiapibbc.SportPageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/SportPageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1139" y="138"/>    
+    <position height="-1" width="-1" x="1199" y="907"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -44,7 +44,7 @@
   </class>  
   <class id="6" language="java" name="com.bbc.uiapibbc.SignInPageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/SignInPageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="417" y="138"/>    
+    <position height="-1" width="-1" x="400" y="904"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -53,7 +53,7 @@
   </class>  
   <class id="7" language="java" name="com.bbc.uiapibbc.BaseTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/BaseTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="586" y="339"/>    
+    <position height="-1" width="-1" x="678" y="653"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -62,7 +62,7 @@
   </class>  
   <class id="8" language="java" name="com.bbc.uiapibbc.BasePage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/BasePage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="685" y="906"/>    
+    <position height="-1" width="-1" x="677" y="72"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -71,7 +71,7 @@
   </class>  
   <class id="9" language="java" name="com.bbc.uiapibbc.DriverFactory" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/DriverFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="164" y="874"/>    
+    <position height="-1" width="-1" x="163" y="611"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -80,7 +80,7 @@
   </class>  
   <class id="10" language="java" name="com.bbc.uiapibbc.TestData" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/TestData.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1327" y="803"/>    
+    <position height="-1" width="-1" x="1344" y="619"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -89,7 +89,7 @@
   </class>  
   <class id="11" language="java" name="com.bbc.uiapibbc.NewsPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/NewsPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="693" y="561"/>    
+    <position height="-1" width="-1" x="657" y="336"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -98,7 +98,7 @@
   </class>  
   <class id="12" language="java" name="com.bbc.uiapibbc.HomePageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/HomePageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="173" y="165"/>    
+    <position height="-1" width="-1" x="143" y="907"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -107,7 +107,7 @@
   </class>  
   <class id="13" language="java" name="com.bbc.uiapibbc.NewsPageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/NewsPageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="664" y="147"/>    
+    <position height="-1" width="-1" x="659" y="910"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -116,7 +116,7 @@
   </class>  
   <class id="14" language="java" name="com.bbc.uiapibbc.NewsVideoPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/NewsVideoPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="967" y="552"/>    
+    <position height="-1" width="-1" x="968" y="342"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -125,7 +125,7 @@
   </class>  
   <class id="15" language="java" name="com.bbc.uiapibbc.WeatherPageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/WeatherPageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1330" y="138"/>    
+    <position height="-1" width="-1" x="1372" y="905"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -134,7 +134,7 @@
   </class>  
   <class id="16" language="java" name="com.bbc.uiapibbc.Helper" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/Helper.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1282" y="360"/>    
+    <position height="-1" width="-1" x="1306" y="120"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -143,7 +143,7 @@
   </class>  
   <class id="17" language="java" name="com.bbc.uiapibbc.SignInPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/SignInPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="430" y="552"/>    
+    <position height="-1" width="-1" x="402" y="327"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -151,66 +151,82 @@
     </display>  
   </class>  
   <generalization id="18">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="7"/>  
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
   <generalization id="19">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="7"/>  
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
   <generalization id="20">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="8"/>  
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
   </generalization>  
   <generalization id="21">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="23">    
+  <association id="22">    
     <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
-      <attribute id="24" name="homePage"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <generalization id="27">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <generalization id="28">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <generalization id="29">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <association id="31">    
-    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
-      <attribute id="32" name="newsPage"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
+      <attribute id="23" name="newsPage">        
+        <position height="0" width="0" x="-36" y="-225"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-36" y="-225"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true" variant="ASSOCIATION"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="34">    
+  <generalization id="25">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="26">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
-  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+  <generalization id="27">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="28">    
+    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
+      <attribute id="29" name="newsVideoPage"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
+      <attribute id="32" name="homePage">        
+        <position height="0" width="0" x="4" y="-266"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="4" y="-266"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="34">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  
