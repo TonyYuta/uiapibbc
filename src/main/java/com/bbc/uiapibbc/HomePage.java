@@ -31,9 +31,6 @@ public class HomePage extends BasePage {
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
-
-	//static WebElement we;
-	//private static WebDriver driver;
 	
 	public static String homePageUrl = "http://www.bbc.com/";
 
@@ -44,14 +41,8 @@ public class HomePage extends BasePage {
 	public String dateLabel = "#page > section > h2";
 	
 	//xpath
-	//public String dateLabel = "//*[@id='page']/section[1]/h2";
-	//public String dateLabel = "//*[@id='page']/section[1]/h2/text()";
 	
-/*	public HomePage(WebDriver driver) {
-		this.driver = driver;
-	}
-	*/
-	public HomePage navigateToHomePage(WebDriver driver) {
+	public HomePage navigateToHomePage() {
 		driver.navigate().to(homePageUrl);	
 		return new HomePage(driver);
 	}	
@@ -61,7 +52,7 @@ public class HomePage extends BasePage {
 		return driver.findElement(By.cssSelector(dateLabel)).getText().replaceAll(removeLeadingText, "");
 	}	
 	
-	public NewsPage navigateToNewsPage(WebDriver driver) {
+	public NewsPage navigateToNewsPage() {
 		Helper.waiting2000();
 		WebElement newsHeaderTabElement = driver.findElement(newsHeaderTab);
 		newsHeaderTabElement.click();

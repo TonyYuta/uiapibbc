@@ -34,7 +34,7 @@ public class BasePage {
 		this.driver = driver;
 	}
 	
-	public String currentPageTitle(WebDriver driver) {
+	public String currentPageTitle() {
 		return driver.getTitle();
 	}
 	

@@ -31,8 +31,8 @@ public class NewsPage extends BasePage {
 	public NewsPage(WebDriver driver) {
 		super(driver);
 	}
-	
-	public NewsVideoPage navigateToNewsVideoPage(WebDriver driver) {
+
+	public NewsVideoPage navigateToNewsVideoPage() {
 		Helper.waiting2000();
 		WebElement videoRedTabElement = driver.findElement(videoRedTab);
 		videoRedTabElement.click();

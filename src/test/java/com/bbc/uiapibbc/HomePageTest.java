@@ -30,28 +30,22 @@ public class HomePageTest extends BaseTest {
 	
 	@Test(enabled = true, groups = {"products", "regression", "all"}, priority = 0)
 	public void testCurrentDate() {
-		//BasePage basePage = new BasePage(driver); 
-		//HomePage homePage = new HomePage(driver); 
-		//homePage.navigateToHomePage(driver);
-		//homePage.navigateToHomePage(driver);
-		//Helper.waiting2000();
-		System.out.println("=== debug 1 === homePage.currentDate(): " + homePage.currentDate());
 		Assert.assertEquals(homePage.currentDate(), Helper.currentWeekdayDayOfMonthMonth(), "current date doesn't match to date on Home page");
 	}
 	
 	@Test(enabled = true, groups = {"products", "regression", "all"}, priority = 0)
 	public void testNavigateHomePage() {
 		String expected = "BBC - Homepage";
-		homePage.navigateToHomePage(driver);
+		homePage.navigateToHomePage();
 		Helper.waiting2000();
-		Assert.assertEquals(homePage.currentPageTitle(driver), expected, "URI doesn't match to Home page");
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 	
 	@Test(enabled = true, groups = {"news", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsPage() {
 		String expected = "BBC - Homepage";
 		Helper.waiting2000();
-		Assert.assertEquals(homePage.currentPageTitle(driver), expected, "current Page Title doesn't match to News page");
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "current Page Title doesn't match to News page");
 	}
 	
 	

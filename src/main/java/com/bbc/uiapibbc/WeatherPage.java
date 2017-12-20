@@ -24,7 +24,6 @@ import org.openqa.selenium.WebDriver;
  */
 public class WeatherPage extends BasePage {
 	
-	private WebDriver driver;
 	
 	public WeatherPage(WebDriver driver) {
 		super(driver);

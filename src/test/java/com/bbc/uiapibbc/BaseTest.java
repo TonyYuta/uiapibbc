@@ -52,7 +52,6 @@ public class BaseTest {
 		newsPage = new NewsPage(driver);	
 		newsVideoPage = new NewsVideoPage(driver);
 
-
 	}
 	
 	@AfterClass(enabled = true, alwaysRun = true)
