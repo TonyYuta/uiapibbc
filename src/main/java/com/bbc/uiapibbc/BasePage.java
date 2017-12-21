@@ -33,10 +33,17 @@ public class BasePage {
 	
 	// className
 	
+	/**
+	 * @param driver
+	 */
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String currentPageTitle() {
 		return driver.getTitle();
 	}

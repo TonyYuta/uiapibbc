@@ -32,7 +32,7 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 		
-	public static String homePageUrl = "http://www.bbc.com/";
+	private static String homePageUrl = "http://www.bbc.com/";
 
 	//cssSelector
 	private String homePageTab = "#orb-nav-links > ul > li.orb-nav-homedotcom.orb-w > a";
@@ -56,26 +56,20 @@ public class HomePage extends BasePage {
 	}	
 	
 	public NewsPage navigateToNewsPage() {
-	//	Helper.waiting2000();
 		WebElement newsHeaderTabElement = driver.findElement(newsHeaderTab);
 		newsHeaderTabElement.click();
-	//	Helper.waiting2000();
 		return new NewsPage(driver);
 	}
 	
 	public SportPage navigateToSportPage() {
-	//	Helper.waiting2000();
 		we = driver.findElement(sportHeaderTab);
 		we.click();
-	//	Helper.waiting2000();
 		return new SportPage(driver);
 	}
 	
 	public WeatherPage navigateToWeatherPage() {
-	//	Helper.waiting2000();
 		we = driver.findElement(weatherHeaderTab);
 		we.click();
-	//	Helper.waiting2000();
 		return new WeatherPage(driver);
 	}
 

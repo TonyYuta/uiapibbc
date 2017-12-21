@@ -25,13 +25,12 @@ import org.testng.annotations.Test;
  */
 public class NewsVideoPageTest extends BaseTest {
 
-	@Test(enabled = true, groups = {"news", "newsvideo", "video", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"NewsVideoPageTestClass", "news", "newsvideo", "video", "regression", "all"}, priority = 0)
 	public void testBigNumberMostWatchedVideo() {
 		byte expected = 5;
 		byte slot = 5;
 		newsPage = homePage.navigateToNewsPage();
 		newsVideoPage = newsPage.navigateToNewsVideoPage();
-	//	Helper.waiting2000();
 		Assert.assertEquals(newsVideoPage.mostWatchedVideo(slot), expected, "big number of most watched video doesn't match to slot number");
 	}
 

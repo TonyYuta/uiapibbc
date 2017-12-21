@@ -28,23 +28,21 @@ public class HomePageTest extends BaseTest {
 	 */
 	
 	
-	@Test(enabled = true, groups = {"products", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePageTestClass", "home", "regression", "all"}, priority = 0)
 	public void testCurrentDate() {
 		Assert.assertEquals(homePage.currentDate(), Helper.currentWeekdayDayOfMonthMonth(), "current date doesn't match to date on Home page");
 	}
 	
-	@Test(enabled = true, groups = {"products", "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePageTestClass",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateHomePage() {
 		String expected = "BBC - Homepage";
 		homePage.navigateToHomePage();
-		//Helper.waiting2000();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"news", "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePageTestClass", "home", "news", "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsPage() {
 		String expected = "BBC - Homepage";
-		//Helper.waiting2000();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "current Page Title doesn't match to News page");
 	}
 	

@@ -33,10 +33,8 @@ public class NewsPage extends BasePage {
 	}
 
 	public NewsVideoPage navigateToNewsVideoPage() {
-	//	Helper.waiting2000();
 		WebElement videoRedTabElement = driver.findElement(videoRedTab);
 		videoRedTabElement.click();
-	//	Helper.waiting2000();
 		return new NewsVideoPage(driver);
 	}
 	
