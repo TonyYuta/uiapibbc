@@ -33,19 +33,33 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(homePage.currentDate(), Helper.currentWeekdayDayOfMonthMonth(), "current date doesn't match to date on Home page");
 	}
 	
-	@Test(enabled = true, groups = {"products", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"products", "bat", "regression", "all"}, priority = 0)
 	public void testNavigateHomePage() {
 		String expected = "BBC - Homepage";
 		homePage.navigateToHomePage();
-		Helper.waiting2000();
+		//Helper.waiting2000();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"news", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"news", "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsPage() {
 		String expected = "BBC - Homepage";
-		Helper.waiting2000();
+		//Helper.waiting2000();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "current Page Title doesn't match to News page");
+	}
+	
+	@Test(enabled = true, groups = {"sport", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
+	public void testNavigateToSportPage() {
+		String expected = "Home - BBC Sport";
+		homePage.navigateToSportPage();
+		Assert.assertEquals(sportPage.currentPageTitle(), expected, "current Page Title doesn't match to Sport page");
+	}
+	
+	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
+	public void testNavigateToWeatherPage() {
+		String expected = "BBC Weather";
+		homePage.navigateToWeatherPage();
+		Assert.assertEquals(weatherPage.currentPageTitle(), expected, "current Page Title doesn't match to Weather page");
 	}
 	
 	

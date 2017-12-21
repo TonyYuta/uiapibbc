@@ -1,11 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Page Object test example">
 <parameter name="appURL" value="https://www.bbc.com/"/>
-<parameter name="browserType" value="firefox"/>
+<parameter name="browser" value="firefox"/>
+<parameter name="groups" value="bat"/>
   <test name="basicTest">
-    <classes>      
+    <classes>
+      <class name="com.bbc.uiapibbc.BaseTest"/>
       <class name="com.bbc.uiapibbc.HomePageTest"/>
       <class name="com.bbc.uiapibbc.NewsPageTest"/>
+      <class name="com.bbc.uiapibbc.NewsVideoPageTest"/>
+      <class name="com.bbc.uiapibbc.SportPageTest"/>
+      <class name="com.bbc.uiapibbc.WeatherPageTest"/>
     </classes>
   </test>
 </suite>

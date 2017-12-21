@@ -23,10 +23,11 @@ import org.openqa.selenium.WebDriver;
  *
  */
 public class SportPage extends BasePage {
-
 	
+
 	public SportPage(WebDriver driver) {
 		super(driver);
 	}
-
+	
+	
 }

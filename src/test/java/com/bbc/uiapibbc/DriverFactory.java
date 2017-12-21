@@ -23,8 +23,8 @@ public class DriverFactory {
 		return driver;
 	}
 
-	protected static void setDriver(String browserType, String appURL) {
-		switch (browserType) {
+	protected static void setDriver(String browser, String appURL, String groups) {
+		switch (browser) {
 		case "chrome":			
 			 System.setProperty("webdriver.chrome.driver", "/Library/chromedriver");
 				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/resources/webdrivers/mac/chromedriver");
@@ -49,7 +49,7 @@ public class DriverFactory {
 			driver.get(appURL);
 			break;
 		default:
-			System.out.println("browser : " + browserType
+			System.out.println("browser : " + browser
 					+ " is invalid, Launching Firefox as browser of choice..");
 			driver = initFirefoxDriver(appURL);
 		}
@@ -73,5 +73,6 @@ public class DriverFactory {
 		return driver;
 	}
 
+	
 }
 	

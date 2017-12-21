@@ -26,14 +26,10 @@ import org.openqa.selenium.WebDriver;
 public class NewsVideoPage extends BasePage {
 	
 	private By newsVideoLabel = By.cssSelector("#page>div:nth-child(1)>div:nth-child(1)>div>nav>a>span");
-	
-//	String mostWatchetSpotLocatorPart1 = "div>ul>li:nth-child(";
-//	String mostWatchetSpotLocatorPart2 = ")>a>span:nth-child(2)";
-	
+		
 	String mostWatchetBigNumberLocatorPart1 = "#page>div.vxp-mostpopular-component.vxp-component--post-loaded>div>div>div>div>div>ul>li:nth-child(";
 	String mostWatchetBigNumberLocatorPart2 = ")>a>span.vxp-mostpop__list-item-rank";
 	
-//	private By mostWatchedSlot;
 	private By mostWatchetBigNumber;
 
 	public NewsVideoPage(WebDriver driver) {

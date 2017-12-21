@@ -31,14 +31,17 @@ public class HomePage extends BasePage {
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
-	
+		
 	public static String homePageUrl = "http://www.bbc.com/";
 
 	//cssSelector
-	String homePageTab = "#orb-nav-links > ul > li.orb-nav-homedotcom.orb-w > a";
-	public String welcomeToBbComLabel = "#page > section.module.module--date.module--highlight > h2 > span";
-	public By newsHeaderTab = By.cssSelector("#orb-nav-links > ul > li.orb-nav-newsdotcom.orb-w > a");		
-	public String dateLabel = "#page > section > h2";
+	private String homePageTab = "#orb-nav-links > ul > li.orb-nav-homedotcom.orb-w > a";
+	private String welcomeToBbComLabel = "#page > section.module.module--date.module--highlight > h2 > span";
+	private By newsHeaderTab = By.cssSelector("#orb-nav-links > ul > li.orb-nav-newsdotcom.orb-w > a");		
+	private String dateLabel = "#page > section > h2";
+	private By sportHeaderTab = By.cssSelector("#orb-nav-links > ul > li:nth-child(3) > a");
+	private By homeHeaderTabSelected = By.cssSelector("div>div>nav>ul:nth-child(1)>li>a>span:nth-child(2)"); //needs getText()
+	private By weatherHeaderTab = By.cssSelector("nav>div>ul>li:nth-child(4)>a");
 	
 	//xpath
 	
@@ -53,11 +56,30 @@ public class HomePage extends BasePage {
 	}	
 	
 	public NewsPage navigateToNewsPage() {
-		Helper.waiting2000();
+	//	Helper.waiting2000();
 		WebElement newsHeaderTabElement = driver.findElement(newsHeaderTab);
 		newsHeaderTabElement.click();
-		Helper.waiting2000();
+	//	Helper.waiting2000();
 		return new NewsPage(driver);
 	}
+	
+	public SportPage navigateToSportPage() {
+	//	Helper.waiting2000();
+		we = driver.findElement(sportHeaderTab);
+		we.click();
+	//	Helper.waiting2000();
+		return new SportPage(driver);
+	}
+	
+	public WeatherPage navigateToWeatherPage() {
+	//	Helper.waiting2000();
+		we = driver.findElement(weatherHeaderTab);
+		we.click();
+	//	Helper.waiting2000();
+		return new WeatherPage(driver);
+	}
+
+	
+	
 
 }

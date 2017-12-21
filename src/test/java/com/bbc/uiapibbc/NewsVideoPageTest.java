@@ -24,15 +24,6 @@ import org.testng.annotations.Test;
  *
  */
 public class NewsVideoPageTest extends BaseTest {
-		
-	@Test(enabled = false, groups = {"news", "newsvideo", "video", "regression", "all"}, priority = 0)
-	public void testSecondOfMostWatchedVideo() {
-		String expected = "Video Top Stories";
-		newsPage = homePage.navigateToNewsPage();
-		newsVideoPage = newsPage.navigateToNewsVideoPage();
-		Helper.waiting2000();
-		Assert.assertEquals(newsVideoPage.getNewsVideoPageLabel(), expected, "current Page Title doesn't match to News Video page");
-	}
 
 	@Test(enabled = true, groups = {"news", "newsvideo", "video", "regression", "all"}, priority = 0)
 	public void testBigNumberMostWatchedVideo() {
@@ -40,7 +31,7 @@ public class NewsVideoPageTest extends BaseTest {
 		byte slot = 5;
 		newsPage = homePage.navigateToNewsPage();
 		newsVideoPage = newsPage.navigateToNewsVideoPage();
-		Helper.waiting2000();
+	//	Helper.waiting2000();
 		Assert.assertEquals(newsVideoPage.mostWatchedVideo(slot), expected, "big number of most watched video doesn't match to slot number");
 	}
 

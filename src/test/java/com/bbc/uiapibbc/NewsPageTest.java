@@ -25,12 +25,12 @@ import org.testng.annotations.Test;
  */
 public class NewsPageTest extends BaseTest {
 		
-	@Test(enabled = true, groups = {"news", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"news", "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsVideoPage() {
 		String expected = "Video Top Stories";
 		newsPage = homePage.navigateToNewsPage();
 		newsVideoPage = newsPage.navigateToNewsVideoPage();
-		Helper.waiting2000();
+	//	Helper.waiting2000();
 		Assert.assertEquals(newsVideoPage.getNewsVideoPageLabel(), expected, "current Page Title doesn't match to News Video page");
 	}
 

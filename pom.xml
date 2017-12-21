@@ -63,8 +63,12 @@
                             <name>testnames</name>
                             <value>basicTest</value>
                         </property>
-                        
-                       
+                   
+                    	<systemPropertyVariables>
+<!--                    			<browser>${browser}</browser> -->
+  <!--                  			<groups>${groups}</groups> -->
+                		</systemPropertyVariables>                  
+                  
                     </properties>
                 </configuration>
             </plugin>

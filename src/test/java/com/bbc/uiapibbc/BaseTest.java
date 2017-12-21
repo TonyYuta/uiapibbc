@@ -32,16 +32,18 @@ public class BaseTest {
 	HomePage homePage;
 	NewsPage newsPage;
 	NewsVideoPage newsVideoPage;
+	SportPage sportPage;
+	WeatherPage weatherPage;
 	
 	/**
-	 * @param browserType
+	 * @param browser
 	 * @param appURL
 	 */
-	@Parameters({ "browserType", "appURL" })
+	@Parameters({ "browser", "appURL", "groups" })
 	@BeforeClass(enabled = true, alwaysRun = true)				
-	public void initializeTestBaseSetup(String browserType, String appURL) {
+	public void initializeTestBaseSetup(String browser, String appURL, String groups) {
 		try {
-			DriverFactory.setDriver(browserType, appURL);
+			DriverFactory.setDriver(browser, appURL, groups);
 
 		} catch (Exception e) {
 			System.out.println("Error....." + e.getStackTrace());
@@ -51,6 +53,8 @@ public class BaseTest {
 		homePage = new HomePage(driver);
 		newsPage = new NewsPage(driver);	
 		newsVideoPage = new NewsVideoPage(driver);
+		sportPage = new SportPage(driver);
+		weatherPage = new WeatherPage(driver);
 
 	}
 	
@@ -61,5 +65,7 @@ public class BaseTest {
 		}	
 	
 
+	
+	
 
 }

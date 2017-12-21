@@ -9,6 +9,7 @@
 package com.bbc.uiapibbc;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * BasePage //ADDD (description of class)
@@ -24,7 +25,9 @@ import org.openqa.selenium.WebDriver;
  */
 public class BasePage {
 	
-	public WebDriver driver;	
+	protected WebElement we;
+	//public WebDriver driver;
+	protected WebDriver driver;
 	
 	// id
 	
@@ -37,6 +40,7 @@ public class BasePage {
 	public String currentPageTitle() {
 		return driver.getTitle();
 	}
+	
 	
 
 	
