@@ -12,6 +12,6 @@ stage('Test')	{step([$class: 'Publisher', testResults: '**/testng-results.xml'])
 stage('PMD')	{step([$class: 'PmdPublisher', pattern: '**/pmd*.xml'])}
 stage('CheckStyle') {([$class: 'CheckStylePublisher', pattern: '**/checkstyle*.xml'])}
 stage('FindBugs') {step([$class: 'FindBugsPublisher', pattern: '**/findbugs*.xml'])}
-stage('CPD')	{step([$class: DryPublisher', pattern: '**/cpd.xml'])}
+stage('CPD')	{step([$class: 'DryPublisher', pattern: '**/cpd.xml'])}
 stage('Code Coverage') {step([$class: 'JacocoPublisher', execPattern:'**/**.exec', classPattern: '**/classes', sourcePattern: '**/src/main/java'])}
 }
