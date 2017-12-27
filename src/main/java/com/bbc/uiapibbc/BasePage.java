@@ -48,8 +48,30 @@ public class BasePage {
 		return driver.getTitle();
 	}
 	
+	public String currentPageTitleCopy1() {
+		return driver.getTitle();
+	}
 	
-
+	public String currentPageTitleCopy2() {
+		return driver.getTitle();
+	}
+	
+	public String currentPageTitleCopy3() {
+		return driver.getTitle();
+	}
+	
+	public String currentPageTitleCopy4() {
+		return driver.getTitle();
+	}
+	
+	public String currentPageTitleCopy5() {
+		return driver.getTitle();
+	}
+	
+	public String currentPageTitleCopy6() {
+		return driver.getTitle();
+	}
+	
 	
 //	
 //	public String logOut() {
