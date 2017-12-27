@@ -62,6 +62,13 @@
 		    <version>3.21.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.hudsonci.plugins/dry -->
+		<dependency>
+		    <groupId>org.hudsonci.plugins</groupId>
+		    <artifactId>dry</artifactId>
+		    <version>2.28</version>
+		</dependency>
+			
 <!-- 
         https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
         <dependency>
