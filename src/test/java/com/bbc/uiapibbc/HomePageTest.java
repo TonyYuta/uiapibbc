@@ -60,6 +60,22 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(weatherPage.currentPageTitle(), expected, "current Page Title doesn't match to Weather page");
 	}
 	
+	// copy -- temporary
+	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
+	public void testNavigateToWeatherPageCopy1() {
+		String expected = "BBC Weather";
+		homePage.navigateToWeatherPage();
+		Assert.assertEquals(weatherPage.currentPageTitle(), expected, "current Page Title doesn't match to Weather page");
+	}
+	
+	// copy -- temporary
+	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
+	public void testNavigateToWeatherPageCopy2() {
+		String expected = "BBC Weather";
+		homePage.navigateToWeatherPage();
+		Assert.assertEquals(weatherPage.currentPageTitle(), expected, "current Page Title doesn't match to Weather page");
+	}
+	
 	
 
 	
