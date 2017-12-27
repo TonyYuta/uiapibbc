@@ -26,7 +26,6 @@ import org.openqa.selenium.WebElement;
 public class BasePage {
 	
 	protected WebElement we;
-	//public WebDriver driver;
 	protected WebDriver driver;
 	
 	// id
