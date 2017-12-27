@@ -9,7 +9,8 @@ def mvnHome = tool 'Maven_3.5.0'
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 //sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=" + groups + "-Dbrowser=" + browser
-sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=" + groups + "-Dbrowser=" + browser
+//sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=" + groups + "-Dbrowser=" + browser
+sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"
 stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.xml'])}
 stage('PMD')			{step([$class:	'PmdPublisher', 		pattern: 		'**/pmd*.xml'])}
 stage('CheckStyle') 	{([$class: 		'CheckStylePublisher',	pattern: 		'**/checkstyle.xml'])}
