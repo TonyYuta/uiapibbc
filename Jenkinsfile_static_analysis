@@ -10,8 +10,8 @@ def mvnHome = tool 'Maven_3.5.0'
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 //sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=" + groups + "-Dbrowser=" + browser
 //sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=" + groups + "-Dbrowser=" + browser
-//sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"
-sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle site -Dbrowser=${browser} -Dgroups=${groups}"
+sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"
+//sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle site -Dbrowser=${browser} -Dgroups=${groups}"
 //stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.xml'])}
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 //stage('Maven')  {sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"}
