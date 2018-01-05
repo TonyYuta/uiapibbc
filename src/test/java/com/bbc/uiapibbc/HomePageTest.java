@@ -43,46 +43,24 @@ public class HomePageTest extends BaseTest {
 	@Test(enabled = true, groups = {"HomePageTestClass", "home", "news", "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToNewsPage() {
 		String expected = "BBC - Homepage";
-		Assert.assertEquals(homePage.currentPageTitleCopy1(), expected, "current Page Title doesn't match to News page");
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "current Page Title doesn't match to News page");
 	}
 	
 	@Test(enabled = true, groups = {"sport", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
 	public void testNavigateToSportPage() {
 		String expected = "Home - BBC Sport";
 		homePage.navigateToSportPage();
-		Assert.assertEquals(sportPage.currentPageTitleCopy2(), expected, "current Page Title doesn't match to Sport page");
+		Assert.assertEquals(sportPage.currentPageTitle(), expected, "current Page Title doesn't match to Sport page");
 	}
 	
 	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
 	public void testNavigateToWeatherPage() {
 		String expected = "BBC Weather";
 		homePage.navigateToWeatherPage();
-		Assert.assertEquals(weatherPage.currentPageTitleCopy3(), expected, "current Page Title doesn't match to Weather page");
+		Assert.assertEquals(weatherPage.currentPageTitle(), expected, "current Page Title doesn't match to Weather page");
 	}
 	
-	// copy -- temporary
-	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
-	public void testNavigateToWeatherPageCopy1() {
-		String expected = "BBC Weather";
-		homePage.navigateToWeatherPage();
-		Assert.assertEquals(weatherPage.currentPageTitleCopy4(), expected, "current Page Title doesn't match to Weather page");
-	}
-	
-	// copy -- temporary
-	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
-	public void testNavigateToWeatherPageCopy2() {
-		String expected = "BBC Weather";
-		homePage.navigateToWeatherPage();
-		Assert.assertEquals(weatherPage.currentPageTitleCopy5(), expected, "current Page Title doesn't match to Weather page");
-	}
-	
-	// copy -- temporary
-	@Test(enabled = true, groups = {"weather", "bat", "HomePageTestClass", "regression", "all"}, priority = 0)
-	public void testNavigateToWeatherPageCopy3() {
-		String expected = "BBC Weather";
-		homePage.navigateToWeatherPage();
-		Assert.assertEquals(weatherPage.currentPageTitleCopy6(), expected, "current Page Title doesn't match to Weather page");
-	}
+
 	
 	
 

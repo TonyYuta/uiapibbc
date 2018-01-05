@@ -8,6 +8,9 @@
 
 package com.bbc.uiapibbc;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 /**
  * SportPageTest //ADDD (description of class)
  * <p>
@@ -22,4 +25,19 @@ package com.bbc.uiapibbc;
  */
 public class SportPageTest extends BaseTest {
 
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	public void testIsPresentMoreFromBbcSportLabel() {
+		String expected = "More From BBC Sport";
+		sportPage = homePage.navigateToSportPage();
+		Assert.assertEquals(sportPage.moreFromBbcSportLabel(), expected, "current Label doesn't match to More From BBC Sport");	
+	}
+	
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	public void testIs8SportSectionsAreDifferent() {
+		String expected = "Football";
+		int slot = 1;
+		sportPage = homePage.navigateToSportPage();
+		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
+	}
+	
 }
