@@ -113,5 +113,35 @@ public class SportPageTest extends BaseTest {
 		Assert.assertTrue(al.size() == hs.size(), "current Sport Sections contains duplicates");	
 	}
 	
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	public void testDupCode01() {
+		int res;
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		
+		Assert.assertTrue(res == 30, "qqq dup code");	
+	}
+	
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	public void testDupCode02() {
+		int res;
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		
+		Assert.assertTrue(res == 30, "qqq dup code");	
+	}
+	
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	public void testDupCode03() {
+		int res;
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		res = sportPage.dupCodeQQQ04();
+		
+		Assert.assertTrue(res == 30, "qqq dup code");	
+	}
+	
 	
 }

@@ -69,5 +69,32 @@ public class SportPage extends BasePage {
 		return we.getText();
 	}
 	
+	// qqq del 
+	int dupCodeQQQ04() {
+		int a = 10;
+		int b = 10;
+		int c = 10;
+		int result = a + b + c;
+		return result;
+	}
+	
+	// qqq del 
+	int dupCodeQQQ05() {
+		int a = 10;
+		int b = 10;
+		int c = 10;
+		int result = a + b + c;
+		return result;
+	}
+	
+	// qqq del 
+	int dupCodeQQQ06() {
+		int a = 10;
+		int b = 10;
+		int c = 10;
+		int result = a + b + c;
+		return result;
+	}
+	
 	
 }
