@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="com.bbc.uiapibbc.TestData" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/TestData.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1188" y="506"/>    
+    <position height="-1" width="-1" x="1232" y="482"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="com.bbc.uiapibbc.WeatherPageTest" project="uiapibbc" 
     file="/uiapibbc/src/test/java/com/bbc/uiapibbc/WeatherPageTest.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1212" y="930"/>    
+    <position height="-1" width="-1" x="1275" y="919"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -161,212 +161,141 @@
   </package>  
   <class id="19" language="java" name="com.bbc.uiapibbc.SportFootballPage" project="uiapibbc" 
     file="/uiapibbc/src/main/java/com/bbc/uiapibbc/SportFootballPage.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1150" y="116"/>    
+    <position height="-1" width="-1" x="1194" y="185"/>    
     <display autosize="true" stereotype="false" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="20">    
-    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
-      <attribute id="21" name="newsVideoPage">        
-        <position height="0" width="0" x="20" y="33"/>      
-      </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1">        
-        <position height="0" width="0" x="20" y="33"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="23">    
-    <bendpoint x="336" y="-52"/>    
-    <bendpoint x="634" y="-58"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <dependency id="24">    
-    <bendpoint x="328" y="144"/>    
-    <bendpoint x="404" y="144"/>    
-    <end type="SOURCE" refId="4"/>    
+  <dependency id="20">    
+    <bendpoint x="1445" y="1044"/>    
+    <bendpoint x="1429" y="237"/>    
+    <bendpoint x="1043" y="238"/>    
+    <bendpoint x="1044" y="167"/>    
+    <bendpoint x="869" y="162"/>    
+    <bendpoint x="865" y="42"/>    
+    <end type="SOURCE" refId="14"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
-  <dependency id="25">    
+  <generalization id="21">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="23">    
     <bendpoint x="346" y="850"/>    
     <bendpoint x="353" y="430"/>    
     <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="27">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <generalization id="28">    
-    <bendpoint x="358" y="745"/>    
-    <end type="SOURCE" refId="11"/>    
+  <generalization id="24">    
+    <bendpoint x="1108" y="-82"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="14"/>    
     <end type="TARGET" refId="17"/>  
   </generalization>  
-  <generalization id="29">    
+  <generalization id="26">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <generalization id="27">    
     <bendpoint x="822" y="852"/>    
     <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="17"/>  
   </generalization>  
-  <dependency id="30">    
+  <dependency id="28">    
+    <bendpoint x="842" y="1080"/>    
+    <bendpoint x="1432" y="1073"/>    
+    <bendpoint x="1413" y="268"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="29">    
     <bendpoint x="581" y="474"/>    
     <bendpoint x="1026" y="469"/>    
     <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <dependency id="31">    
+  <dependency id="30">    
     <bendpoint x="286" y="830"/>    
     <bendpoint x="290" y="573"/>    
     <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
+  <generalization id="31">    
+    <bendpoint x="1144" y="856"/>    
+    <bendpoint x="908" y="861"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
   <dependency id="32">    
     <bendpoint x="188" y="-157"/>    
     <bendpoint x="1023" y="-164"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <association id="33">    
-    <bendpoint x="934" y="541"/>    
-    <bendpoint x="1057" y="540"/>    
-    <bendpoint x="1060" y="224"/>    
-    <bendpoint x="1332" y="224"/>    
-    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
-      <attribute id="34" name="weatherPage">        
-        <position height="0" width="0" x="120" y="0"/>      
-      </attribute>      
-      <multiplicity id="35" minimum="0" maximum="1">        
-        <position height="0" width="0" x="120" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="36">    
-    <bendpoint x="785" y="933"/>    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <generalization id="37">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="38">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="17"/>  
-  </generalization>  
-  <generalization id="39">    
-    <bendpoint x="1144" y="856"/>    
-    <bendpoint x="908" y="861"/>    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="17"/>  
-  </generalization>  
-  <association id="40">    
-    <bendpoint x="989" y="375"/>    
-    <bendpoint x="988" y="106"/>    
-    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
-      <attribute id="41" name="sportPage">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="42" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="43">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <dependency id="44">    
-    <bendpoint x="1316" y="1045"/>    
-    <bendpoint x="1311" y="160"/>    
-    <bendpoint x="869" y="162"/>    
-    <bendpoint x="865" y="42"/>    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="45">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <dependency id="46">    
-    <bendpoint x="842" y="1080"/>    
-    <bendpoint x="1302" y="1074"/>    
-    <bendpoint x="1300" y="726"/>    
-    <bendpoint x="1300" y="268"/>    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <generalization id="47">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="48">    
+  <generalization id="33">    
     <bendpoint x="175" y="-75"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <dependency id="49">    
-    <bendpoint x="498" y="1093"/>    
-    <bendpoint x="-83" y="1094"/>    
-    <bendpoint x="-84" y="421"/>    
-    <bendpoint x="-27" y="376"/>    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <generalization id="50">    
-    <bendpoint x="1108" y="-82"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <dependency id="51">    
-    <bendpoint x="50" y="1122"/>    
-    <bendpoint x="1366" y="1113"/>    
-    <bendpoint x="1358" y="107"/>    
+  <generalization id="34">    
+    <bendpoint x="358" y="745"/>    
     <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="6"/>  
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <dependency id="35">    
+    <bendpoint x="785" y="933"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="5"/>  
   </dependency>  
-  <association id="52">    
+  <dependency id="36">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="37">    
     <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
-      <attribute id="53" name="homePage">        
+      <attribute id="38" name="homePage">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="54" minimum="0" maximum="1">        
+      <multiplicity id="39" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true" variant="ASSOCIATION"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="55">    
-    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
-      <attribute id="56" name="newsPage">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="57" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="58">    
+  <dependency id="40">    
+    <bendpoint x="328" y="144"/>    
+    <bendpoint x="404" y="144"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <dependency id="42">    
     <bendpoint x="140" y="-171"/>    
     <bendpoint x="1107" y="-176"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="59">    
+  <dependency id="43">    
+    <bendpoint x="50" y="1122"/>    
+    <bendpoint x="1460" y="1105"/>    
+    <bendpoint x="1440" y="110"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="44">    
     <bendpoint x="55" y="899"/>    
     <bendpoint x="-44" y="842"/>    
     <bendpoint x="-46" y="462"/>    
@@ -374,14 +303,86 @@
     <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
-  <generalization id="60">    
+  <association id="45">    
+    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
+      <attribute id="46" name="newsPage">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="47" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="48">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="49">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <association id="50">    
+    <bendpoint x="989" y="375"/>    
+    <bendpoint x="989" y="202"/>    
+    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
+      <attribute id="51" name="sportPage">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="52" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="53">    
+    <bendpoint x="934" y="541"/>    
+    <bendpoint x="1057" y="540"/>    
+    <bendpoint x="1060" y="224"/>    
+    <bendpoint x="1332" y="224"/>    
+    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
+      <attribute id="54" name="weatherPage">        
+        <position height="0" width="0" x="120" y="0"/>      
+      </attribute>      
+      <multiplicity id="55" minimum="0" maximum="1">        
+        <position height="0" width="0" x="120" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="56">    
+    <bendpoint x="498" y="1093"/>    
+    <bendpoint x="-83" y="1094"/>    
+    <bendpoint x="-84" y="421"/>    
+    <bendpoint x="-27" y="376"/>    
     <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="17"/>  
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="57">    
+    <bendpoint x="336" y="-52"/>    
+    <bendpoint x="634" y="-58"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="61">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="17"/>  
-  </generalization>  
+  <dependency id="58">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="59">    
+    <end type="SOURCE" refId="17" navigable="false" variant="ASSOCIATION">      
+      <attribute id="60" name="newsVideoPage">        
+        <position height="0" width="0" x="20" y="33"/>      
+      </attribute>      
+      <multiplicity id="61" minimum="0" maximum="1">        
+        <position height="0" width="0" x="20" y="33"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="false" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
