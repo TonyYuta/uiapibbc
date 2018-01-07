@@ -51,4 +51,23 @@ public class SportPage extends BasePage {
 		return we.getText();
 	}
 	
+	// qqq del 
+	String sportSectionNameQQQ01(int slot) {
+		we = driver.findElement(By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2));
+		return we.getText();
+	}
+	
+	// qqq del 
+	String sportSectionNameQQQ02(int slot) {
+		we = driver.findElement(By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2));
+		return we.getText();
+	}
+	
+	// qqq del 
+	String sportSectionNameQQQ03(int slot) {
+		we = driver.findElement(By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2));
+		return we.getText();
+	}
+	
+	
 }
