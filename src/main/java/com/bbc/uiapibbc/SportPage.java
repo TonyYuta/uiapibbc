@@ -46,7 +46,8 @@ public class SportPage extends BasePage {
 	}
 
 	String sportSectionName(int slot) {
-		we = (WebElement) By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2);
+		//we = (WebElement) By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2);
+		we = driver.findElement(By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2));
 		return we.getText();
 	}
 	

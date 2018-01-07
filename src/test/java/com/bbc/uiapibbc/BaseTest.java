@@ -8,6 +8,9 @@
 
 package com.bbc.uiapibbc;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -34,6 +37,9 @@ public class BaseTest {
 	NewsVideoPage newsVideoPage;
 	SportPage sportPage;
 	WeatherPage weatherPage;
+	
+	ArrayList<String> al;
+	HashSet<String> hs;
 	
 	/**
 	 * @param browser
