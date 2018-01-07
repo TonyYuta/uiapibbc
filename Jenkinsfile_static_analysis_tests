@@ -5,7 +5,7 @@ def mvnHome = tool 'Maven_3.5.0'
 // sh "'${mvnHome}/bin/mvn' clean site -Dgroups=all"
 
 //sh "'${mvnHome}/bin/mvn' clean site -Dgroups=" + groups
-sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
+//sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 
 //sh "'${mvnHome}/bin/mvn' clean site -Dgroups=${group} -Dbrowser=${browser}"
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser}"
@@ -17,8 +17,8 @@ sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
 //sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle site -Dbrowser=${browser} -Dgroups=${groups}"
 //stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.xml'])}
 //sh "'${mvnHome}/bin/mvn' clean site -Dbrowser=${browser} -Dgroups=${groups}"
-//stage('Maven')  {sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"}
-//stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.xml'													 ])}
+stage('Maven')  {sh "'${mvnHome}/bin/mvn' clean findbugs:findbugs pmd:pmd pmd:cpd checkstyle:checkstyle test -Dmaven.test.failure.ignore=true -Dgroups=all -Dbrowser=chrome"}
+stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.xml'													 ])}
 stage('PMD')			{step([$class:	'PmdPublisher', 		pattern: 		'**/pmd*.xml',				failureThreshold: 50, 	unstableThreshold: 20])}
 stage('CheckStyle') 	{step([$class: 	'CheckStylePublisher',	pattern: 		'**/checkstyle.xml',		failureThreshold: 100,	unstableThreshold: 50])}
 stage('FindBugs') 		{step([$class:	'FindBugsPublisher', 	pattern: 		'**/findbugs*.xml',			failureThreshold: 30,	unstableThreshold: 10])}
