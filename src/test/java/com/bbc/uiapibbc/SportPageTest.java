@@ -35,7 +35,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.moreFromBbcSportLabel(), expected, "current Label doesn't match to More From BBC Sport");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection01() {
 		String expected = "Football";
 		int slot = 1;
@@ -43,7 +43,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection02() {
 		String expected = "Formula 1";
 		int slot = 2;
@@ -51,7 +51,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection03() {
 		String expected = "Cricket";
 		int slot = 3;
@@ -59,7 +59,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection04() {
 		String expected = "Rugby Union";
 		int slot = 4;
@@ -67,7 +67,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection05() {
 		String expected = "Rugby League";
 		int slot = 5;
@@ -75,7 +75,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection06() {
 		String expected = "Tennis";
 		int slot = 6;
@@ -83,7 +83,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection07() {
 		String expected = "Golf";
 		int slot = 7;
@@ -91,7 +91,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testSportSection08() {
 		String expected = "Athletics";
 		int slot = 8;
@@ -99,7 +99,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertEquals(sportPage.sportSectionName(slot), expected, "current Sport Section doesn't match to expected");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "sport", "regression", "all"}, priority = 1)
 	public void testIsSportSectionsAreDifferent() {
 		al = new ArrayList<>();
 		hs = new HashSet<>();
@@ -113,7 +113,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertTrue(al.size() == hs.size(), "current Sport Sections contains duplicates");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "regression", "all"}, priority = 1)
 	public void testDupCode01() {
 		int res;
 		res = sportPage.dupCodeQQQ04();
@@ -123,7 +123,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertTrue(res == 30, "qqq dup code");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "regression", "all"}, priority = 1)
 	public void testDupCode02() {
 		int res;
 		res = sportPage.dupCodeQQQ04();
@@ -133,7 +133,7 @@ public class SportPageTest extends BaseTest {
 		Assert.assertTrue(res == 30, "qqq dup code");	
 	}
 	
-	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"SportPageTestClass", "dup", "sport", "regression", "all"}, priority = 1)
 	public void testDupCode03() {
 		int res;
 		res = sportPage.dupCodeQQQ04();

@@ -40,7 +40,7 @@ public class SportFootballTest extends BaseTest {
 		Assert.assertEquals(sportFootballPage.isFootballTablesPresent(), expected, "marker label 'Football Tables' is missing");
 	}
 
-	@Test(enabled = true, groups = {"SportFootballPageTestClass", "sport", "premier", "sportfootball", "bat", "regression", "all"}, priority = 2)
+	@Test(enabled = true, groups = {"SportFootballPageTestClass", "sport", "premier", "sportfootball", "regression", "all"}, priority = 2)
 	public void testIsPremierLeaguePresent() {
 		String expected = "Premier League";
 		homePage.navigateToSportPage();
