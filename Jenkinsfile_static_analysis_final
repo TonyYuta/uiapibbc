@@ -6,6 +6,6 @@ stage('Test')			{step([$class:	'Publisher', 			testResults: 	'**/testng-results.
 stage('PMD')			{step([$class:	'PmdPublisher', 		pattern: 		'**/pmd*.xml',				failureThreshold: 50, 	unstableThreshold: 20])}
 stage('CheckStyle') 	{step([$class: 	'CheckStylePublisher',	pattern: 		'**/checkstyle*.xml',		failureThreshold: 100,	unstableThreshold: 50])}
 stage('FindBugs') 		{step([$class:	'FindBugsPublisher', 	pattern: 		'**/findbugs*.xml',			failureThreshold: 30,	unstableThreshold: 10])}
-stage('CPD')			{step([$class:	'DryPublisher', 		pattern: 		'**/cpd.xml',				failureThreshold: 2,	unstableThreshold: 1 ])}
+stage('CPD')			{step([$class:	'DryPublisher', 		pattern: 		'**/cpd*.xml',				failureThreshold: 2,	unstableThreshold: 1 ])}
 stage('Code Coverage')	{step([$class:	'JacocoPublisher', 		execPattern:	'**/**.exec', classPattern:'**/classes', sourcePattern:'**/src/main/java'])}
 }

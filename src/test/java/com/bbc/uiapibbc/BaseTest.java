@@ -36,6 +36,7 @@ public class BaseTest {
 	NewsPage newsPage;
 	NewsVideoPage newsVideoPage;
 	SportPage sportPage;
+	SportFootballPage sportFootballPage;
 	WeatherPage weatherPage;
 	
 	ArrayList<String> al;
@@ -60,6 +61,7 @@ public class BaseTest {
 		newsPage = new NewsPage(driver);	
 		newsVideoPage = new NewsVideoPage(driver);
 		sportPage = new SportPage(driver);
+		sportFootballPage = new SportFootballPage(driver);
 		weatherPage = new WeatherPage(driver);
 
 	}

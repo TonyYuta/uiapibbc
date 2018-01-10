@@ -34,10 +34,16 @@ public class SportPage extends BasePage {
 	// cssSelector
 	String moreFromBbcSportSectionNPart1 = "#more-from > div > div > div:nth-child(";
 	String moreFromBbcSportSectionNPart2 = ") > article > div.aintree_article-body > a";
-//	private By moreFromBbcSportSectionN;
+	private By footballTab = By.cssSelector("#sport > div.nav-top > nav > div > ul > li:nth-child(4) > a > span");
 	
 	public SportPage(WebDriver driver) {
 		super(driver);
+	}
+	
+	public SportFootballPage navigateToSportFootballPage() {
+		WebElement we = driver.findElement(footballTab);
+		we.click();
+		return new SportFootballPage(driver);
 	}
 	
 	String moreFromBbcSportLabel() {
@@ -46,7 +52,6 @@ public class SportPage extends BasePage {
 	}
 
 	String sportSectionName(int slot) {
-		//we = (WebElement) By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2);
 		we = driver.findElement(By.cssSelector(moreFromBbcSportSectionNPart1 + slot + moreFromBbcSportSectionNPart2));
 		return we.getText();
 	}
