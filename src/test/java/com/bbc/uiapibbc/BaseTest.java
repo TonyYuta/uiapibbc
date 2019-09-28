@@ -47,7 +47,7 @@ public class BaseTest {
 	 * @param appURL
 	 */
 	@Parameters({ "browser", "appURL", "groups" })
-	@BeforeClass(enabled = true, alwaysRun = true)				
+	@BeforeClass(alwaysRun = true)				
 	public void initializeTestBaseSetup(String browser, String appURL, String groups) {
 		try {
 			DriverFactory.setDriver(browser, appURL, groups);
